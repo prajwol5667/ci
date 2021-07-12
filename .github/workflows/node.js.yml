@@ -10,6 +10,10 @@ on:
     branches: [ master ]
 
 jobs:
+  main:
+    name: Build and test
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, 'ci skip')"
   build:
 
     runs-on: ubuntu-latest
@@ -21,12 +25,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Check Commit Type
-      uses: gsactions/commit-message-checker@v1
-      with:
-        pattern: '\[[^]]+\] .+$'
-        flags: 'gm'
-        error: 'Your first line has to contain a commit type like "[BUGFIX]".'
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
       with:
