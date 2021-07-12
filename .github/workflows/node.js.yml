@@ -21,8 +21,7 @@ jobs:
 
     steps:
     main:
-    name: Build and test
-    runs-on: ubuntu-latest
+    - name: Build and test
     if: "!contains(github.event.head_commit.message, 'ci skip')"
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
