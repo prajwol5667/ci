@@ -16,8 +16,8 @@ jobs:
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
         image: prajwol5667/gitci1
-        tags: newapi
-        buildArgs: DOCKER_ENV=stage
+        tags: latest
+        buildArgs: DOCKER_ENV=production
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
