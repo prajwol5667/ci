@@ -6,7 +6,7 @@
 
 [Check out Bootstrap Admin Templates Bundle](https://genesisui.com/bundle.html?support=1)
 
-This is Vue.js version of our Bootstrap 4 admin template [CoreUI](https://github.com/coreui/coreui-free-bootstrap-admin-template).
+This is Vue.js version of our Bootstrap 5 admin template [CoreUI](https://github.com/coreui/coreui-free-bootstrap-admin-template).
 
 Please help us on [Product Hunt](https://www.producthunt.com/posts/coreui-open-source-bootstrap-4-admin-template-with-angular-2-react-js-vue-js-support) & [Designer News](https://www.designernews.co/stories/81127). Thanks in advance!
 
